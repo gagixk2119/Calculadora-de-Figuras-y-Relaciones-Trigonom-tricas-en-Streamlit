@@ -5,17 +5,25 @@ import math
 st.title("Aplicación Para Calcular Figuras y Relaciones Trigonométricas")
 
 # Selección de figura
-figura = st.selectbox("Selecciona una figura geométrica",["Circulo"])
+figura = st.selectbox("Selecciona una figura geométrica",["Circulo", "Triángulo", "Rectángulo", "Cuadrado"])
 
-# Widget para ingresar el radio
+# Calculo de circulo
+if figura == "Circulo"
 radio = st.slider ("Selecciona el radio", 0.0, 10.0, 5.0)
 
-# Calculo del área de circulo 
+# Area de circulo
 area = math.pi * radio**2
 
-# Mostrar resultado
-st.write(f"El área del círculo con radio {radio} es: {area: .2f}")
+# Perimetro de circulo
+perimetro = 2 * math.pi * radio**2
 
-# Calculo del perímetro de circulo
-perimetro = 2 * math.pi * radio 
+# Resultados
+st.metric("Área", f"{area:.2f}")
+st.metric("Perímetro",f"{perimetro:.2f}")
+st.succes("¡Resultadps!")
+
+# Calculo de triángulo
+elif figura == "Triángulo"
+base = st.slider("Lado a", 0.0, 20.0, 5.0)
+altura = st.slider("Lado b", 0.0, 20.0, 5.0)
 
