@@ -30,7 +30,7 @@ elif figura == "Triángulo":
 #Area de triangulo
    area = 0.5 * base * altura
 # Perímetro
-   perimetro = lado_a + ladp_b + lado_c
+   perimetro = lado_a + lado_b + lado_c
 # resultados
    st.metric("Área",f"{area:.2f}")
    st.metric("Perímetro",f"{perimetro:.2f}")
