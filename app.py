@@ -9,7 +9,7 @@ st.title("Aplicación Para Calcular Figuras y Relaciones Trigonométricas")
 figura = st.selectbox("Selecciona una figura geométrica",["Circulo", "Triángulo", "Rectángulo", "Cuadrado"])
 
 # Calculo de circulo
-if figura == "Circulo"
+if figura == "Circulo":
    radio = st.slider ("Selecciona el radio", 0.0, 10.0, 5.0)
 # Area de circulo
    area = math.pi * radio**2
@@ -21,7 +21,7 @@ if figura == "Circulo"
    st.success("¡Resultadps!")
 
 # Calculo de triángulo
-elif figura == "Triángulo"
+elif figura == "Triángulo":
    base = st.slider("Lado a", 0.0, 20.0, 5.0)
    altura = st.slider("Lado b", 0.0, 20.0, 5.0)
    lado_a = st.slider("Lado a", 0.0, 20.0, 5.0)
@@ -37,7 +37,7 @@ elif figura == "Triángulo"
    st.success("¡Resultados!")
 
 # Rectángulo
-elif figura == "Rectángulo"
+elif figura == "Rectángulo":
    base = st.slider("Selecciona la base", 0.0, 20.0, 5.0)
    altura = st.slider("Selecciona la altura", 0.0, 20.0, 5.0)
 # Área de rectángulo
@@ -50,7 +50,7 @@ elif figura == "Rectángulo"
    st.success("¡Resultados!")
 
 # Cuadrado
-elif figura == "Cuadrado"
+elif figura == "Cuadrado":
    lado = st.slider("Selecciona el lado", 0.0, 20.0, 5.0)
 # Area de cuadrado
    area = lado**2
