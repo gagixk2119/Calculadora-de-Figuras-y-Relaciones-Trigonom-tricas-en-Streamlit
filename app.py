@@ -1,6 +1,6 @@
 import streamlit as st
 import math
-import matplotlib
+import matplotlib.pyplot as plt
 
 
 st.title("Aplicación Para Calcular Figuras y Relaciones Trigonométricas")
